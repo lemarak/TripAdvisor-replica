@@ -1,7 +1,169 @@
+/* COMMON RULES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Trip Sans", sans-serif;
+  font-family: "Trip Sans VF", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
 }
 
 h1 {
-  font-weight: 500;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 28px;
+}
+
+li {
+  list-style: none;
+}
+button {
+  display: block;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 12px 16px;
+}
+
+button:hover {
+  background-color: rgb(54, 53, 53);
+  text-decoration: underline;
+}
+
+.fas,
+.far {
+  margin: 0 4px;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+}
+
+header input {
+  background: white;
+  border: 2px solid #e0e0e0;
+  padding: 10px;
+  outline: 0;
+  border-radius: 8px;
+  width: 340px;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul li {
+  margin: 0 10px;
+}
+
+header a {
+  color: white;
+}
+
+/* MAIN */
+
+h1 span {
+  color: #f95c5e;
+}
+
+/* Boxes */
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  border: 1px solid black;
+  padding: 12px 16px;
+  height: 90px;
+  width: 150px;
+  border-radius: 12px;
+}
+
+.box p {
+  line-height: 20px;
+  font-weight: bold;
+}
+
+/* images */
+.pictures-main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.maxi-pictures {
+  width: 691px;
+  height: 483px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mini-pictures {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mini-picture img {
+  width: 504px;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+  margin-left: 2px;
+}
+
+/* informations */
+
+.infos {
+  display: flex;
+}
+
+.map-info-2 img {
+  width: 465px;
+  height: 190px;
+  object-fit: cover;
+  object-position: center;
 }
