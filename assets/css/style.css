@@ -1,3 +1,7 @@
+body {
+  font-family: "Trip Sans", sans-serif;
+}
+
 h1 {
-  font-weight: bold;
+  font-weight: 500;
 }
