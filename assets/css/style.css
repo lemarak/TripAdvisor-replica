@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Trip Sans VF", sans-serif;
+  font-family: "Trip Sans", sans-serif;
 }
 
 a {
@@ -16,7 +16,6 @@ a {
 .container {
   width: 1200px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 h1,
@@ -29,6 +28,7 @@ h1 {
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 h2 {
   font-size: 28px;
@@ -41,6 +41,7 @@ button {
   display: block;
   background-color: black;
   color: white;
+  border: 0;
   border-radius: 30px;
   font-size: 16px;
   padding: 12px 16px;
@@ -80,6 +81,7 @@ header input {
   outline: 0;
   border-radius: 8px;
   width: 340px;
+  margin-right: 140px;
 }
 
 header ul {
@@ -121,6 +123,11 @@ h1 span {
   border-radius: 12px;
 }
 
+.box:hover {
+  color: white;
+  background-color: black;
+}
+
 .box p {
   line-height: 20px;
   font-weight: bold;
@@ -130,7 +137,7 @@ h1 span {
 .pictures-main {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 70px;
+  margin-bottom: 25px;
 }
 
 .maxi-pictures {
@@ -155,15 +162,64 @@ h1 span {
   margin-left: 2px;
 }
 
+/* span links */
+.span-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #333333;
+  margin-bottom: 45px;
+}
 /* informations */
 
 .infos {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
+.txt-information {
+  width: 580px;
+}
+
+.txt-information h2 {
+  margin-bottom: 30px;
+}
+
+.txt-information p {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.map-information {
+  width: 465px;
+}
+
+.map-info-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #f95c5e;
+  height: 270px;
+  padding: 20px;
+  border-radius: 12px 12px 0 0;
+}
+
+.map-info-1 button {
+  width: 160px;
+  height: 50px;
+}
 .map-info-2 img {
   width: 465px;
   height: 190px;
   object-fit: cover;
   object-position: center;
+  border-radius: 0 0 12px 12px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #faf1ed;
+  height: 80px;
 }
