@@ -1,0 +1,4 @@
+Mettre à jour les polices
+Header, mettre lien et button sur nav
+Header fixed
+Ajouter variables dans css
