@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --brand-red: #fe5d5d;
+  --brand-grey: #333333;
+  --btn-black-hover: rgb(54, 53, 53);
+  --btn-white-hover: rgb(240, 240, 240);
+}
+
 body {
   font-family: "Trip Sans", sans-serif;
 }
@@ -38,6 +45,10 @@ li {
   list-style: none;
 }
 
+section {
+  margin-bottom: 30px;
+}
+
 /* buttons */
 button {
   display: block;
@@ -54,7 +65,7 @@ button {
 }
 
 .btn-black:hover {
-  background-color: rgb(54, 53, 53);
+  background-color: var(--btn-black-hover);
   text-decoration: underline;
 }
 
@@ -64,7 +75,7 @@ button {
 }
 
 .btn-white:hover {
-  background-color: rgb(240, 240, 240);
+  background-color: var(--btn-white-hover);
 }
 
 .fas,
@@ -72,6 +83,56 @@ button {
   margin: 0 4px;
 }
 
+/* carousel */
+.carousel {
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+
+.carousel div {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  position: relative;
+  margin-right: 20px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 2px;
+}
+.green-c {
+  background-color: #04a96c;
+}
+
+.white-c {
+  border: 1px solid #04a96c;
+  background-color: white;
+}
+
+.heart-circle {
+  display: flex;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+.heart-circle i {
+  font-size: 22px;
+  margin: auto;
+}
 /* HEADER */
 header {
   display: flex;
@@ -119,7 +180,7 @@ header a {
 /* MAIN */
 
 h1 span {
-  color: #f95c5e;
+  color: var(--brand-red);
 }
 
 /* Boxes */
@@ -138,11 +199,10 @@ h1 span {
   border: 1px solid black;
   padding: 12px 16px;
   border-radius: 12px;
-  margin-right: 20px;
 }
 
-.boxes:nth-last-child() {
-  margin-right: 0;
+.boxes .box:not(:last-child) {
+  margin-right: 20px;
 }
 
 .box:hover {
@@ -169,6 +229,21 @@ h1 span {
   height: 100%;
   flex: 1;
   margin-right: 2px;
+  background-image: url(../images/brittany.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: flex-end;
+}
+
+.maxi-pictures button {
+  padding: 6px 8px;
+  margin: 12px;
+}
+
+.maxi-pictures button span {
+  font-size: 12px;
 }
 
 .maxi-pictures img {
@@ -204,6 +279,7 @@ h1 span {
   color: #333333;
   margin-bottom: 45px;
 }
+
 /* informations */
 
 .infos {
@@ -233,7 +309,7 @@ h1 span {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #f95c5e;
+  background-color: var(--brand-red);
   height: 270px;
   padding: 20px;
   border-radius: 12px 12px 0 0;
@@ -251,9 +327,92 @@ h1 span {
   border-radius: 0 0 12px 12px;
 }
 
+/* Destinations */
+.destinations {
+  margin-bottom: 80px;
+}
+
+.destinations h2 {
+  margin-bottom: 30px;
+}
+
+.destinations img {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.destinations .carousel div span {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+/* unmissable */
+.unmissable {
+  margin-bottom: 40px;
+}
+
+.unmissable h2 {
+  margin-bottom: 30px;
+}
+
+article {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.art-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+}
+.art-left h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.art-left .span-2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: var(--brand-grey);
+  margin-bottom: 20px;
+}
+.art-left .span-3 {
+  font-size: 14px;
+}
+
+.unmissable .carousel .car-unmiss {
+  display: flex;
+  flex-direction: column;
+}
+.unmissable img {
+  width: 270px;
+  height: 200px;
+}
+
+.car-unmiss .span-1 {
+  font-size: 18px;
+  color: #545454;
+  margin: 6px 0 4px 0;
+}
+.car-unmiss .span-2 {
+  font-size: 14px;
+  color: #333333;
+  margin: 6px 0 4px 0;
+}
+
+.btn-vote {
+  display: flex;
+}
+
 /* FOOTER */
 
 footer {
   background-color: #faf1ed;
   height: 80px;
+  margin-top: 40px;
 }
