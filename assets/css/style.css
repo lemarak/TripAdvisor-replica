@@ -133,6 +133,23 @@ button {
   font-size: 22px;
   margin: auto;
 }
+
+.number-little {
+  font-size: 12px;
+  color: #333333;
+  margin-left: 6px;
+}
+
+.logo-2020 {
+  width: 35px !important;
+  height: 47px !important;
+  border-radius: 12px 12px 0 0;
+  position: absolute;
+  object-fit: cover;
+  bottom: 80px;
+  left: 10px;
+}
+
 /* HEADER */
 header {
   display: flex;
@@ -409,10 +426,37 @@ article {
   display: flex;
 }
 
+/* Choices */
+.choices {
+  margin-bottom: 80px;
+}
+
+.choices h2 {
+  margin-bottom: 30px;
+}
+.choices .carousel .car-unmiss {
+  display: flex;
+  flex-direction: column;
+}
+
+.choices img {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+  object-position: top;
+}
+
 /* FOOTER */
 
 footer {
   background-color: #faf1ed;
   height: 80px;
   margin-top: 40px;
+}
+
+footer p {
+  text-align: center;
+
+  line-height: 80px;
+  margin-bottom: 0;
 }
