@@ -2,3 +2,5 @@ Mettre à jour les polices
 Header, mettre lien et button sur nav
 Header fixed
 Ajouter variables dans css
+Refaire Informations
+Mettre % dans section carousel et calc()
