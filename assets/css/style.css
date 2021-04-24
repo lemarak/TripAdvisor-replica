@@ -21,7 +21,8 @@ a {
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -138,6 +139,8 @@ button:focus {
 /* HEADER */
 header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 80px;
   margin-bottom: 30px;
   /* position: fixed;
@@ -145,12 +148,9 @@ header {
   margin: 0 auto; */
 }
 
-header .container {
+.header-left {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-
 header nav {
   display: flex;
 }
@@ -160,13 +160,34 @@ header nav {
 }
 
 header input {
-  background: white;
-  border: 2px solid #e0e0e0;
   padding: 10px;
   outline: 0;
+  border: none;
+}
+
+header .search-container {
+  margin-left: 20px;
+}
+
+header .search-container > form {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 2px solid #e0e0e0;
   border-radius: 8px;
   width: 280px;
+  padding-left: 10px;
 }
+/* header form button {
+  float: left;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+} */
 
 header nav {
   display: flex;

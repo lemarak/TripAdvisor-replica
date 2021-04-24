@@ -22,37 +22,44 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <div class="container">
-        <!-- bars -->
-        <i class="fas fa-bars hidden"></i>
-        <!-- logo -->
-
+    <header class="container">
+      <!-- bars -->
+      <i class="fas fa-bars hidden"></i>
+      <!-- logo -->
+      <div class="header-left">
         <img src="./assets/images/logo.svg" alt="logo" class="logo" />
+
         <!-- input -->
-
-        <input class="input-field" type="search" />
-
-        <!-- icons list -->
-        <nav>
-          <button class="btn-white">
-            <i class="fas fa-pen"></i><span>Avis</span>
-          </button>
-          <button class="btn-white">
-            <i class="far fa-bell"></i><span>Alertes</span>
-          </button>
-          <button class="btn-white">
-            <i class="far fa-heart"></i><span>favoris</span>
-          </button>
-
-          <!-- Connect button -->
-          <form style="display: inline" action="#" method="post">
-            <button class="btn-black">Connectez-vous</button>
+        <div class="search-container">
+          <form
+            class="example"
+            action="/action_page.php"
+            style="margin: auto; max-width: 300px"
+          >
+            <i class="fa fa-search"></i>
+            <input type="text" name="search" />
           </form>
-          <!-- search -->
-          <i class="fas fa-search hidden"></i>
-        </nav>
+        </div>
       </div>
+      <!-- icons list -->
+      <nav>
+        <button class="btn-white">
+          <i class="fas fa-pen"></i><span>Avis</span>
+        </button>
+        <button class="btn-white">
+          <i class="far fa-bell"></i><span>Alertes</span>
+        </button>
+        <button class="btn-white">
+          <i class="far fa-heart"></i><span>favoris</span>
+        </button>
+
+        <!-- Connect button -->
+        <form style="display: inline" action="#" method="post">
+          <button class="btn-black">Connectez-vous</button>
+        </form>
+      </nav>
+      <!-- search -->
+      <i class="fas fa-search hidden"></i>
     </header>
 
     <!-- MAIN -->

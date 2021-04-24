@@ -4,3 +4,4 @@ Header fixed
 Ajouter variables dans css
 Refaire Informations
 Mettre % dans section carousel et calc()
+Voir width header quand < 768px

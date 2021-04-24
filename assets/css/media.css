@@ -14,7 +14,6 @@
 @media (max-width: 1183px) {
   .container {
     width: 100%;
-    padding: 0 20px;
   }
   h1 {
     font-size: 32px;
@@ -33,10 +32,16 @@
   .boxes .box:nth-child(4) {
     margin-right: 0;
   }
+  /* .boxes .box:not(:nth-child(4n)) {
+    margin-right: 20px;
+  } */
+  .box span {
+    max-width: 170px;
+  }
 }
 
 /* Entre 1024 et 1183 */
-@media (min-width: 1024px) and (max-width: 1183px) {
+@media (min-width: 1025px) and (max-width: 1183px) {
   /* header {
     background-color: darksalmon;
   } */
@@ -52,16 +57,30 @@
 }
 
 /* Inférieur à 1024 */
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   header nav span {
     display: none;
   }
   .logo {
     height: 80%;
   }
-  header input {
-    width: 140px;
+
+  header .search-container {
+    /* width: 300px; */
+    display: none;
+    /* width: 100%;
     padding: 6px;
+    height: 80%; */
+  }
+
+  header nav {
+    justify-content: center;
+  }
+  header nav button {
+    margin: 0;
+  }
+  main {
+    margin-top: 40px;
   }
   .pictures-main {
     height: 280px;
@@ -111,15 +130,27 @@
 @media (max-width: 767px) {
   header {
     /* background-color: darkred; */
+    width: 100%;
     height: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
   }
-  .logo {
+  main {
+    margin-top: 20px;
+  }
+  .header-left {
     margin: auto;
-    height: 60%;
+    height: 80%;
   }
-  header input {
+  header .search-container {
     display: none;
   }
+  header nav {
+    display: none;
+  }
+
   header button {
     display: none;
   }
@@ -130,6 +161,7 @@
 
   .boxes {
     flex-wrap: nowrap;
+    overflow: hidden;
   }
   .box {
     clear: both;
