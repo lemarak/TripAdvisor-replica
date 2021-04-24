@@ -162,11 +162,17 @@
   .boxes {
     flex-wrap: nowrap;
     overflow: hidden;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
   }
   .box {
     clear: both;
     display: inline-block;
     white-space: nowrap;
+    scroll-snap-align: start;
+    position: relative;
   }
   .boxes .box:nth-child(4) {
     margin-right: 20px;
